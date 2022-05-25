@@ -7,14 +7,11 @@ int main() {
     int max = -1;
     int index;
     for(int i=0; i<9; i++) {
-        cin >> a[i];         
-    }
-
-    for(int k=0; k<9; k++) {
-        if(a[k] > max) {
-            max = a[k];
-            index = k+1;
-        }
+        cin >> a[i];    
+        if(a[i] > max) {
+            max = a[i];
+            index = i+1;
+        }     
     }
 
     cout << max << "\n";
